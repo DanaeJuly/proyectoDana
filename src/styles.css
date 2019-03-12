@@ -1,0 +1,31 @@
+/* You can add global styles to this file, and also import other style files */
+/* Added prebuilt themes of angular */
+@import "~@angular/material/prebuilt-themes/deeppurple-amber.css";
+/* @import "~@angular/material/prebuilt-themes/indigo-pink.css"; */
+/* @import "~@angular/material/prebuilt-themes/pink-bluegrey.css"; */
+/* @import "~@angular/material/prebuilt-themes/purple-green.css"; */
+
+.center{
+    width: 50%;
+    margin: 20px auto;
+    padding: 150px;
+  }
+  
+  .main-div{
+      padding: 25px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .full-width {
+    width: 100%;
+  }
+
+  .mat-radio-button ~ .mat-radio-button {
+    margin-left: 32px;
+  }
+
+  .row-hover{
+    background-color: #eaeaea;
+  }

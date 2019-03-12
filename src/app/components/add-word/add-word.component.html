@@ -1,0 +1,23 @@
+<div class="main-div">
+
+    <mat-card class="center">
+
+        <mat-card-title style="padding-left: 25px">
+            Add Word - Firebase example
+        </mat-card-title>
+        <mat-card-subtitle style="padding-left: 25px">
+            In Angular Material
+        </mat-card-subtitle>
+        <mat-card-content style="padding:25px">
+
+            <form [formGroup]="formGroup">
+                <mat-form-field class="full-width">
+                    <input shUppercase matInput placeholder="En una palabra dime que te pareció la sesion?" formControlName="name">
+                </mat-form-field>
+            </form>
+
+            <button color="accent" class="full-width" mat-raised-button (click)="send()">Click me!</button>
+
+        </mat-card-content>
+    </mat-card>
+</div>

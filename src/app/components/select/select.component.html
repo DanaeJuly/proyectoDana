@@ -1,0 +1,22 @@
+<div class="main-div">
+
+  <mat-card class="center">
+
+    <mat-card-title style="padding-left: 25px">
+      Badge Component
+    </mat-card-title>
+    <mat-card-subtitle style="padding-left: 25px">
+      In Angular Material
+    </mat-card-subtitle>
+    <mat-card-content style="padding:25px">
+
+      <mat-form-field class="full-width">
+        <mat-select placeholder="Favorite food" >
+          <mat-option *ngFor="let food of foods" [value]="food.value">
+            {{food.viewValue}}
+          </mat-option>
+        </mat-select>
+      </mat-form-field>
+    </mat-card-content>
+  </mat-card>
+</div>
