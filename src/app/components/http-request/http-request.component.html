@@ -3,15 +3,18 @@
     <mat-card class="center">
 
         <mat-card-title style="padding-left: 25px">
-            HttpClient - request example
+            Buscando
         </mat-card-title>
         <mat-card-subtitle style="padding-left: 25px">
-            In Angular Material
+            Buscar al Paciente
         </mat-card-subtitle>
+        <mat-form-field class="full-width">
+                <input matInput placeholder="ingrese el Ci del Paciente " value="Sushi">
+              </mat-form-field>
         <mat-card-content style="padding:25px">
 
             <div>
-                <button class="full-width" color="accent" (click)="api()" mat-raised-button>Get images</button>
+                <button class="full-width" color="accent" (click)="api()" mat-raised-button>Buscar al paciente</button>
             </div>
             <br>
             <div>
