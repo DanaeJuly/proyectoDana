@@ -1,7 +1,8 @@
 <mat-sidenav-container class="fondo">
-  <mat-sidenav #sidenav mode="over" [(opened)]="opened" class="fondomenu"  >
+  <mat-sidenav #sidenav mode="over" [(opened)]="opened" class="fondomenu"   >
 
     <mat-accordion>
+      <!--Lista de los pacientes -->
       <mat-expansion-panel>
         <mat-expansion-panel-header>
           <mat-panel-title>
@@ -32,6 +33,7 @@
           </mat-list>         
       </mat-expansion-panel>
 
+<!--Lista del personal de la clinica -->
       <mat-expansion-panel>
           <mat-expansion-panel-header>
             <mat-panel-title>
@@ -49,38 +51,99 @@
               <mat-list-item role="listitem" [routerLink]="['/datepicker-material']">
                 agreagar Especialidad
               </mat-list-item>
-              
-               
-              <!-- <mat-list-item role="listitem" [routerLink]="['/slider-material']">
-                Slider
-              </mat-list-item>
-              <mat-list-item role="listitem" [routerLink]="['/datepicker-material']">
-                Slide Toogle
-              </mat-list-item> -->
             </mat-list>         
         </mat-expansion-panel>
 
-
-
-
-
+<!--Lista del personal de la clinica -->
       <mat-expansion-panel>
-
-        
+          <mat-expansion-panel-header>
+              <mat-panel-title>
+                 PERSONAL 
+              </mat-panel-title>
+              <mat-panel-description>
+                Datos del Personal
+              </mat-panel-description>
+            </mat-expansion-panel-header>
+            
+            <mat-list role="list">
+                <mat-list-item role="listitem" [routerLink]="['/table-material']">
+                  Listar Personal
+                </mat-list-item>
+                <mat-list-item role="listitem" [routerLink]="['/datepicker-material']">
+                  agreagar Personal
+                </mat-list-item>
+                <mat-list-item role="listitem" [routerLink]="['/datepicker-material']">
+                  Buscar al Personal
+                </mat-list-item>
+              </mat-list>       
+      </mat-expansion-panel>
+      
+      <!--modulo de inventario de medicamentos -->
+      <mat-expansion-panel>
+          <mat-expansion-panel-header>
+              <mat-panel-title>
+                 MEDICAMENTOS
+              </mat-panel-title>
+              <mat-panel-description>
+                detalle de medicamentos
+              </mat-panel-description>
+            </mat-expansion-panel-header>
+            
+            <mat-list role="list">
+                <mat-list-item role="listitem" [routerLink]="['/table-material']">
+                  Listar Medicamentos
+                </mat-list-item>
+                <mat-list-item role="listitem" [routerLink]="['/datepicker-material']">
+                  registra Medicamento
+                </mat-list-item>
+                <mat-list-item role="listitem" [routerLink]="['/datepicker-material']">
+                  Buscar Medicamento
+                </mat-list-item>
+              </mat-list>       
       </mat-expansion-panel>
       
       
+        <!--regresar a inicio -->
+        <mat-expansion-panel>
+            <mat-expansion-panel-header>
+                <mat-panel-title>
+                   INICIO
+                </mat-panel-title>
+              </mat-expansion-panel-header>
+              
+              <mat-list role="list">
+                  <mat-list-item role="listitem" [routerLink]="['/table-material']">
+                    Volver
+                  </mat-list-item>
+                </mat-list>       
+        </mat-expansion-panel>
       
-      
+       <!--Cerrar cecion -->
+       <mat-expansion-panel>
+          <mat-expansion-panel-header>
+              <mat-panel-title>
+                 CERRAR CECIÓN
+              </mat-panel-title>
+            </mat-expansion-panel-header>
+            
+            <mat-list role="list">
+                <mat-list-item role="listitem" [routerLink]="['/table-material']">
+                  Cerrar
+                </mat-list-item>
+              </mat-list>       
+      </mat-expansion-panel>
 
-      
-
- 
+     
     </mat-accordion>
     <mat-divider></mat-divider>
     <mat-list-item role="listitem"></mat-list-item>
     <mat-divider></mat-divider>
     <mat-list-item role="listitem"></mat-list-item>
+
+
+
+    <div  id="outer1" > 
+      </div>
   </mat-sidenav>-->
 
   <mat-sidenav-content>
@@ -88,9 +151,13 @@
       
       <mat-icon (click)="sidenav.toggle()">dashboard</mat-icon> 
       <span>
-         CLINICA LOS RIOS DANGER
+       <h1>   CLÍNICA LOS RIOS DANGER</h1>
+       
       </span>
     </mat-toolbar>
+    <div  id="outer" > 
+    </div>
+
     <router-outlet></router-outlet>
 
 

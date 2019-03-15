@@ -22,3 +22,18 @@
   background-size: 100% 100%;
   background-attachment: fixed;
  }
+ 
+ #outer {
+  width: 15em;
+  height: 15em;
+  position: absolute;
+  right: 1em;
+  background-image: url('/assets/imagen/escudo.png');
+}
+#outer1 {
+  width: 15em;
+  height: 15em;
+  position: absolute;
+   
+  background-image: url('/assets/imagen/escudo.png');
+}
