@@ -1,64 +1,48 @@
 <div class="main-div">
 
-    <mat-card class="center">
+        <mat-card class="center">
+      
+          <mat-card-title style="padding-left: 25px">
+            Agregar Nuevo Paciente
+          </mat-card-title>
+          <mat-card-subtitle style="padding-left: 25px">
+            Datos del Paciente
+          </mat-card-subtitle>
+          <mat-card-content style="padding:25px">
+      
+      
+            <form class="example-form">
+              <mat-form-field class="full-width">
+                <input matInput placeholder="Ingre el Nombre " value="Sushi">
+              </mat-form-field>
+      
+              <mat-form-field class="full-width">
+                <textarea matInput placeholder="Ingrese Apellidos"></textarea>
+              </mat-form-field>
 
-        <mat-card-title style="padding-left: 25px">
-             Agregar Nuevo Paciente
-        </mat-card-title>
-        <mat-card-subtitle style="padding-left: 25px">
-            Datos Del Paciente
-        </mat-card-subtitle>
-        <mat-card-content style="padding:25px">
+              <mat-form-field class="full-width">
+                    <textarea matInput placeholder="Ingrese Edad"></textarea>
+                  </mat-form-field>
+             <mat-form-field class="full-width">
+              <textarea matInput placeholder="Ingrese Fecha de Nacimiento"></textarea>
+            </mat-form-field>
+            <mat-form-field class="full-width">
+            <textarea matInput placeholder="Ingrese Sexo"></textarea>
+            </mat-form-field>
+            <mat-form-field class="full-width">
+         <textarea matInput placeholder="Ingrese Responsable "></textarea>
+         </mat-form-field>
+         <mat-form-field class="full-width">
+                <textarea matInput placeholder="Ingrese Tipo de Atencion"></textarea>
+              </mat-form-field>
+              <mat-form-field class="full-width">
+                    <textarea matInput placeholder="Ingrese Al Doctor"></textarea>
+                  </mat-form-field>
 
-            <p>Agregar Nombres</p>
-            <mat-form-field class="full-width"> 
-            <input matInput  type=text placeholder="Nombres" >
-            <mat-datepicker-toggle  ></mat-datepicker-toggle>
-            <mat-datepicker #picker></mat-datepicker>
-          </mat-form-field>
-            <br>
 
-            <mat-divider></mat-divider>
-            <br>
-            <p>Agregar Apellidos</p>
-            <!-- mat-raised-button	Rectangular contained button w/ elevation -->
-            <input  type=text placeholder="apellidos" >
-            <br>
-            <mat-divider></mat-divider>
-            <br>
-            <p>agregar Edad</p>
-            <input  type=text placeholder="Edad " >
-            <!-- mat-flat-button	Rectangular contained button w/ no elevation -->
-            <br>
-            <mat-divider></mat-divider>
-            <br>
-            <p>Agregar Fecha de nacimiento</p>
-            <input  type=text placeholder="fecha de nacimiento" >
-            <!-- mat-stroked-button	Rectangular outlined button w/ no elevation -->
-            <br>
-            <mat-divider></mat-divider>
-            <br>
-            <p>Agrgar Sexo</p>
-            <input  type=text placeholder="apellidos" >
-            <!-- mat-icon-button    Circular button with a transparent background, meant to contain an icon -->
-            <br>
-            <mat-divider></mat-divider>
-            <br>
-            <p>Agregar Responsable del paciente</p>
-            <input  type=text placeholder="responsables" >
-            <!-- mat-fab	Circular button w/ elevation, defaults to theme's accent color -->
-            <br>
-            <mat-divider></mat-divider>
-            <br>
-            <p>Agregar Tipo de Atencion</p>
-            <input  type=text placeholder="tipo de Atencion" > 
-            <mat-divider></mat-divider>
-            <!-- mat-mini-fab -->
-            <p>Agregar Doctor</p>
-            <input  type=text placeholder="Seleccione Doctor" > 
-            <mat-divider></mat-divider>
-            <button class="full-width" mat-button>Guardar</button>
-
-        </mat-card-content>
-    </mat-card>
-</div>
+                  <button class="full-width" mat-raised-button>GUARDAR REGISTRO</button>
+            </form>
+      
+          </mat-card-content>
+        </mat-card>
+      </div>
