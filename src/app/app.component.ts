@@ -11,10 +11,11 @@ export class AppComponent {
   constructor(private router: Router){}
   events: string[] = [];
   opened: boolean;
-  APP_TOOLBAR_TITLE = 'angular material studyjam GDG LA PAZ';
-  MY_WORK = 'angular material studijam GDG LA PAZ';
+  APP_TOOLBAR_TITLE = ' ESTA ES TU AGENDA DIA A DIA ';
+  MY_WORK = ' vcdosuhvshdb';
 
   public nav(x){
     this.router.navigateByUrl('/'.concat(x));
   }
+  
 }

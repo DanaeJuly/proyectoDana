@@ -1,0 +1,38 @@
+    
+<div class="page-wrap height-100 mat-bg-primary">
+  <div class="session-form-hold">
+    <mat-progress-bar mode="determinate" class="session-progress"></mat-progress-bar>
+    <mat-card>
+      <mat-card-content>
+        <div class="text-center pb-1">
+          <h1>RECICLA</h1>
+          <p class="text-muted m-0">Inicia sesión en tu cuenta</p>
+        </div>
+         
+        <div fxLayout="column">
+          <mat-form-field>
+            <input matInput placeholder="Usuario" >
+          </mat-form-field>
+  
+          <mat-form-field>
+            <input matInput placeholder="Contraseña" type="password">
+          </mat-form-field>
+          <div class="pb-1">
+        </div>
+
+            <mat-checkbox
+            
+              class="pb-1">Recordar contraseña</mat-checkbox>
+          </div>
+          
+          <button mat-raised-button class="mat-primary full-width mb-1" [routerLink]="['/home']">Ingresar</button>
+          <div class="text-center">
+            <a [routerLink]="['/login']" class="mat-primary text-center full-width">¿Olvidaste tu constraseña?</a>
+            <span fxFlex></span>
+            <a [routerLink]="['/registrar']" class="mat-primary text-center full-width">Crear una nueva cuenta</a>
+          </div>
+      </mat-card-content>
+    </mat-card>
+  </div>
+</div>
+

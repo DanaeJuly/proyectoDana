@@ -1,8 +1,24 @@
 .example-container {
-  position: absolute;
-  top: 0;
+  position:top;
+  top:0;
   bottom: 0;
   left: 0;
   right: 0;
-  background: #eee;
+  background-image: url('/assets/imagen/0011.jpg');
 }
+ .fondo{
+  position:absolute;
+  top:0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background-image: url('/assets/imagen/0011.jpg');
+  background-size: 100% 100%;
+  background-attachment: fixed;
+  
+ }
+ .fondomenu{
+  background-image: url('/assets/imagen/022.jpg');
+  background-size: 100% 100%;
+  background-attachment: fixed;
+ }

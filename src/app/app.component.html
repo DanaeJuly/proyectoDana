@@ -1,227 +1,68 @@
-<mat-sidenav-container class="example-container">
-  <mat-sidenav #sidenav mode="over" [(opened)]="opened">
+<mat-sidenav-container class="fondo">
+  <mat-sidenav #sidenav mode="over" [(opened)]="opened" class="fondomenu"  >
 
     <mat-accordion>
       <mat-expansion-panel>
         <mat-expansion-panel-header>
           <mat-panel-title>
-            FormControls
+            LISTA DE PACIENTES
           </mat-panel-title>
           <mat-panel-description>
-            Material Angular
+            Datos del paciente
           </mat-panel-description>
         </mat-expansion-panel-header>
+        
         <mat-list role="list">
-          <mat-list-item role="listitem" [routerLink]="['/autocomplete-material']">
-            Autocomplete
-          </mat-list-item>
-          <mat-list-item role="listitem" [routerLink]="['/checkbox-material']">
-            CheckBox
-          </mat-list-item>
-          <mat-list-item role="listitem" [routerLink]="['/datepicker-material']">
-            Datepicker
-          </mat-list-item>
-          <mat-list-item role="listitem" [routerLink]="['/input-material']">
-            Input
-          </mat-list-item>
-          <mat-list-item role="listitem" [routerLink]="['/radio-material']">
-            Radio button
-          </mat-list-item>
-          <mat-list-item role="listitem" [routerLink]="['/select-material']">
-            Select
-          </mat-list-item>
-          <!-- <mat-list-item role="listitem" [routerLink]="['/slider-material']">
-            Slider
-          </mat-list-item>
-          <mat-list-item role="listitem" [routerLink]="['/datepicker-material']">
-            Slide Toogle
-          </mat-list-item> -->
-        </mat-list>
+            <mat-list-item role="listitem" [routerLink]="['/table-material']">
+              listar paciente
+            </mat-list-item>
+            <mat-list-item role="listitem" [routerLink]="['/checkbox-material']">
+              agreagar pacientes
+            </mat-list-item>
+            <mat-list-item role="listitem" [routerLink]="['/datepicker-material']">
+              buscar paciente
+            </mat-list-item>
+             
+            <!-- <mat-list-item role="listitem" [routerLink]="['/slider-material']">
+              Slider
+            </mat-list-item>
+            <mat-list-item role="listitem" [routerLink]="['/datepicker-material']">
+              Slide Toogle
+            </mat-list-item> -->
+          </mat-list>
+        
+
+
+
+
+
+         
       </mat-expansion-panel>
       <mat-expansion-panel>
-        <mat-expansion-panel-header>
-          <mat-panel-title>
-            Navigation
-          </mat-panel-title>
-          <mat-panel-description>
-            Material Angular
-          </mat-panel-description>
-        </mat-expansion-panel-header>
-        <mat-list role="list">
-          <mat-list-item role="listitem">
-            Menu
-          </mat-list-item>
-          <mat-list-item role="listitem">
-            Sidenav
-          </mat-list-item>
-          <mat-list-item role="listitem">
-            Toolbar
-          </mat-list-item>
-        </mat-list>
-      </mat-expansion-panel>
-      <mat-expansion-panel>
-        <mat-expansion-panel-header>
-          <mat-panel-title>
-            Buttons & Indicators
-          </mat-panel-title>
-          <mat-panel-description>
-            Material Angular
-          </mat-panel-description>
-        </mat-expansion-panel-header>
-        <mat-list role="list">
-          <mat-list-item role="listitem" [routerLink]="['/button-material']">
-            Button
-          </mat-list-item>
-          <mat-list-item role="listitem" [routerLink]="['/badge-material']">
-            Badge
-          </mat-list-item>
-          <mat-list-item role="listitem" [routerLink]="['/chips-material']">
-            Chips
-          </mat-list-item>
-          <mat-list-item role="listitem" [routerLink]="['/icon-material']">
-            Icon
-          </mat-list-item>
-        </mat-list>
+
+        
       </mat-expansion-panel>
       
-      <mat-expansion-panel>
-        <mat-expansion-panel-header>
-          <mat-panel-title>
-            PopUps & Modals
-          </mat-panel-title>
-          <mat-panel-description>
-            Material Angular
-          </mat-panel-description>
-        </mat-expansion-panel-header>
-        <mat-list role="list">
-          <mat-list-item role="listitem" [routerLink]="['/bottom-sheet-material']">
-            Bottom sheet
-          </mat-list-item>
-        </mat-list>
-        <mat-list role="list">
-          <mat-list-item role="listitem" [routerLink]="['/dialog-material']">
-            Dialog
-          </mat-list-item>
-        </mat-list>
-        <mat-list role="list">
-          <mat-list-item role="listitem" [routerLink]="['/snackbar-material']">
-            Snackbar
-          </mat-list-item>
-        </mat-list>
-        <mat-list role="list">
-          <mat-list-item role="listitem" [routerLink]="['/http-request']">
-            Tooltip
-          </mat-list-item>
-        </mat-list>
-      </mat-expansion-panel>
-      <mat-expansion-panel>
-          <mat-expansion-panel-header>
-            <mat-panel-title>
-              Demo
-            </mat-panel-title>
-            
-            <mat-panel-description>
-              Material Angular
-            </mat-panel-description>
-          </mat-expansion-panel-header>
-          <mat-list role="list">
-              <mat-list-item role="listitem" [routerLink]="['/table-material']">
-                Table
-              </mat-list-item>
-            </mat-list>
-          <mat-list role="list">
-            <mat-list-item role="listitem" [routerLink]="['/add-words']">
-              Add Words
-            </mat-list-item>
-          </mat-list>
-          <mat-list role="list">
-            <mat-list-item role="listitem" [routerLink]="['/see-words']">
-              See Words
-            </mat-list-item>
-          </mat-list>
-          <mat-list role="list">
-            <mat-list-item role="listitem" [routerLink]="['/http-request']">
-              Http request
-            </mat-list-item>
-          </mat-list>
-        </mat-expansion-panel>
+      
+      
+      
 
-        <mat-expansion-panel>
-          <mat-expansion-panel-header>
-            <mat-panel-title>
-              Demo2
-            </mat-panel-title>
-            
-            <mat-panel-description>
-              Material Angular
-            </mat-panel-description>
-          </mat-expansion-panel-header>
-          <mat-list role="list">
-              <mat-list-item role="listitem" [routerLink]="['/table-material']">
-                Table
-              </mat-list-item>
-            </mat-list>
-          <mat-list role="list">
-            <mat-list-item role="listitem" [routerLink]="['/add-words']">
-              Add Words
-            </mat-list-item>
-          </mat-list>
-          <mat-list role="list">
-            <mat-list-item role="listitem" [routerLink]="['/see-words']">
-              See Words
-            </mat-list-item>
-          </mat-list>
-          <mat-list role="list">
-            <mat-list-item role="listitem" [routerLink]="['/http-request']">
-              Http request
-            </mat-list-item>
-          </mat-list>
-        </mat-expansion-panel>
+      
 
-
-        <mat-expansion-panel>
-          <mat-expansion-panel-header>
-            <mat-panel-title>
-              Demo2
-            </mat-panel-title>
-            
-            <mat-panel-description>
-              Material Angular
-            </mat-panel-description>
-          </mat-expansion-panel-header>
-          <mat-list role="list">
-              <mat-list-item role="listitem" [routerLink]="['/table-material']">
-                Table
-              </mat-list-item>
-            </mat-list>
-          <mat-list role="list">
-            <mat-list-item role="listitem" [routerLink]="['/add-words']">
-              Add Words
-            </mat-list-item>
-          </mat-list>
-          <mat-list role="list">
-            <mat-list-item role="listitem" [routerLink]="['/see-words']">
-              See Words
-            </mat-list-item>
-          </mat-list>
-          <mat-list role="list">
-            <mat-list-item role="listitem" [routerLink]="['/http-request']">
-              Http request
-            </mat-list-item>
-          </mat-list>
-        </mat-expansion-panel>
+ 
     </mat-accordion>
     <mat-divider></mat-divider>
     <mat-list-item role="listitem"></mat-list-item>
     <mat-divider></mat-divider>
     <mat-list-item role="listitem"></mat-list-item>
-  </mat-sidenav>
+  </mat-sidenav>-->
 
   <mat-sidenav-content>
-    <mat-toolbar color="accent">
-      <mat-icon (click)="sidenav.toggle()">dashboard</mat-icon>
+    <mat-toolbar   color="primary">
+      
+      <mat-icon (click)="sidenav.toggle()">dashboard</mat-icon> 
       <span>
-        Angular Material - Studyjam Angular - GDG La Paz
+         CLINICA LOS RIOS DANGER
       </span>
     </mat-toolbar>
     <router-outlet></router-outlet>

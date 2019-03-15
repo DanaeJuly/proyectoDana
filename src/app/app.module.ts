@@ -32,6 +32,8 @@ import { UppercaseDirective } from './directivas/uppercase.directive';
 import { SelectComponent } from './components/select/select.component';
 import { TableComponent } from './components/table/table.component';
 import { RowHoverDirective } from './directivas/row-hover.directive';
+import { LoginComponent } from './login/login.component';
+import { RouterModule } from '@angular/router';
 
 @NgModule({
   // declaramos todos los componentes q usaremos
@@ -56,10 +58,13 @@ import { RowHoverDirective } from './directivas/row-hover.directive';
     UppercaseDirective,
     SelectComponent,
     TableComponent,
-    RowHoverDirective
+    RowHoverDirective,
+    LoginComponent
   ],
   // importamos todos los modulos los cuales necesitaremos
   imports: [
+    RouterModule,
+
     // Para integrar con angular firebase
     AngularFireModule.initializeApp(environment.firebase),
     AngularFirestoreModule,
