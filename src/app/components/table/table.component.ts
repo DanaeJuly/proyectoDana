@@ -11,22 +11,22 @@ export class TableComponent implements OnInit {
   @ViewChild(MatSort) sort: MatSort;
   @ViewChild(MatPaginator) paginator: MatPaginator;
   ELEMENT_DATA: any[] = [
-    { position: 1, name: 'Hydrogen', weight: 1.0079, symbol: 'H' },
-    { position: 2, name: 'Helium', weight: 4.0026, symbol: 'He' },
-    { position: 3, name: 'Lithium', weight: 6.941, symbol: 'Li' },
-    { position: 4, name: 'Beryllium', weight: 9.0122, symbol: 'Be' },
-    { position: 5, name: 'Boron', weight: 10.811, symbol: 'B' },
-    { position: 6, name: 'Carbon', weight: 12.0107, symbol: 'C' },
-    { position: 7, name: 'Nitrogen', weight: 14.0067, symbol: 'N' },
-    { position: 8, name: 'Oxygen', weight: 15.9994, symbol: 'O' },
-    { position: 9, name: 'Fluorine', weight: 18.9984, symbol: 'F' },
-    { position: 10, name: 'Neon', weight: 20.1797, symbol: 'Ne' },
+    { position: 1, name: 'Leny Churata', weight: 26, symbol: '15/07/93',sexo:'F', responsable:'Padre',medico:'Toledo Vargas',atencion:'Ginecologia' },
+    { position: 2, name: 'Wyliam Velasquez', weight:26, symbol: '15/07/93',sexo:'F',responsable:'Madre',medico:'Fernando Ticona',atencion:'Medicina General' },
+    { position: 3, name: 'Leonardo Rios', weight: 41, symbol: '15/07/71',sexo:'M',responsable:'Esposa',medico:'Leonardo Aliaga',atencion:'Rinoplastia' },
+    { position: 4, name: 'Frigida Carbajal', weight:22, symbol: '15/07/96',sexo:'M',responsable:'Hermano',medico:'Toledo Vargas',atencion:'Ginecologia' },
+    { position: 5, name: 'Miguel Toledo', weight:81, symbol: '15/07/46',sexo:'F',responsable:'Hijo',medico:'Alan Brito',atencion:'Medicina General' },
+    { position: 6, name: 'Edwin Vargas', weight: 27, symbol: '15/07/87',sexo:'F',responsable:'Esposo',medico:'Hugo Mendoza',atencion:'Medicina General' },
+    { position: 7, name: 'Noemi Poma', weight:67, symbol: '15/07/50',sexo:'M',responsable:'Madre',medico:'Toledo Vargas',atencion:'Ginecologia' },
+    { position: 8, name: 'Andrea Quiroga', weight: 42, symbol: '15/07/76',sexo:'F',responsable:'Abuelo',medico:'Alici Yampaci',atencion:'Laboratorio' },
+    { position: 9, name: 'Franz Marca', weight: 24, symbol: '15/07/95',sexo:'M',responsable:'Tio',medico:'Hugo Mendoza',atencion:'Medicina General' },
+    { position: 10, name: 'Luis Marca', weight: 37, symbol: '15/07/75',sexo:'F',responsable:'Hermana',medico:'Fernando Ticona',atencion:'Medicina General' },
   ];
 
   dataSource: MatTableDataSource<any> = new MatTableDataSource();;
   constructor() { }
 
-  displayedColumns: string[] = ['position', 'name', 'weight', 'symbol'];
+  displayedColumns: string[] = ['position', 'name', 'weight', 'symbol','sexo','responsable','medico','atencion'];
 
   ngOnInit() {
     this.dataSource.data = this.ELEMENT_DATA;
